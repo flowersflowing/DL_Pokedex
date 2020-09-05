@@ -5,24 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
-    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 </head>
 <body>
-    <form>
+
+  <header class="bg-top text-center">
+    <h1 class="container">Pokedex</h1>
+    <img class="pikachu" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg" alt="pikachu">
+  </header>
+  <section class="container form-section">
+    <form id="form">
         <div class="row">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Bulbasaur">
+          <div class="col-md-6 my-2">
+            <input type="text" class="form-control" id="pokemon" placeholder="Bulbasaur">
           </div>
-          <div class="col">
-            <select class="form-control">
-                <option>Default select</option>
+          <div class="col-md-5 my-2">
+            <select class="form-control" id="seleccion">
+                <option>Elige tipo</option>
+                <option>Fuego</option>
+                <option>Electricidad</option>               
             </select>
           </div>
+          <div class="col-md-1 my-2">
+            <button type="submit" class="btn-danger">Buscar</button>
+          </div>
         </div>
-    </form>   
+    </form>       
+  </section>
+  <section class="devolucion text-center"></section>
+  <section class="devolucion2 container mb-5"></section>
+  <section class="container my-2">
+    <div class="pt-4" id="chartContainer"></div>    
+  </section>
 
-    <script type="text/javasript" src="assets/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>

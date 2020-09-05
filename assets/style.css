@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    padding-top: 1.7em;
+    padding-bottom: 0.5em;
+    font-size: 60px;
+    color: whitesmoke;
+    display: inline;
+}
+
+img {
+    display: inline;
+}
+
+.bg-top {
+    background-color: #D6191E;
+    margin-top: 0px;
+}
+
+.form-section {
+    padding-top: 2em;
+}
+
+.pikachu {
+    margin: 0.5em;
+    height: 150px;
+}
+
+#chartContainer {
+    height: 370px; 
+    width: 100%;
+}
+
+.devolucion {
+    font-size: 40px;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.devolucion2 {
+    font-size: 18px;
+    width: 400px;
+}
