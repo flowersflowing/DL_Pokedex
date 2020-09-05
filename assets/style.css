@@ -11,10 +11,6 @@ h1 {
     display: inline;
 }
 
-img {
-    display: inline;
-}
-
 .bg-top {
     background-color: #D6191E;
     margin-top: 0px;
@@ -25,6 +21,7 @@ img {
 }
 
 .pikachu {
+    display: inline;
     margin: 0.5em;
     height: 150px;
 }
@@ -40,7 +37,11 @@ img {
     margin-bottom: 0.5em;
 }
 
-.devolucion2 {
+/* .devolucion2 {
+    height: 100px;
+} */
+
+.devolucion3 {
     font-size: 18px;
     width: 400px;
 }
