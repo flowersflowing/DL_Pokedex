@@ -36,9 +36,9 @@ $( document ).ready(function() {
                         </table>                        
                     `;
                     $(`.devolucion3`).html(table);
+                    //Habilidad sin tabla: $(".devolucion2").append(`<p>${element.ability.name}</p>`);                    
+                    //Llamar al gráfico
                     graph(response);
-                    // $(`#chartContainer`).text(graph(response));
-                    //Habilidad sin tabla: $(".devolucion2").append(`<p>${element.ability.name}</p>`);
                 },
                 error: function (error) {
                     alert("Ha habido un error en tu búsqueda. Fíjate si escribiste bien el nombre de tu pokemón.");
@@ -50,7 +50,8 @@ $( document ).ready(function() {
         }
     });
 
-//Gráfico
+
+//Función para el gráfico
 function graph (pok) {
     let datos = [];
 
